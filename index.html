@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Roughwork on Q & A</title>
+</head>
+<body>
+    <h1 class="title">
+       Questions & Answers <i class="fas fa-question-circle"></i>
+    </h1>
+    <form action="#" method="post" class="sign-up">
+        <fieldset>
+            <legend>Your Details</legend>
+            <br>
+            <label for="fname">First Name</label>
+            <input type="text" name="first_name" id="fname" class="info-needed" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="last_name" id="lname" class="info-needed" required>
+            <label for="email">Email Address</label>
+            <input type="email" name="email_address" id="email" class="info-needed" required>
+        </fieldset>
+       
+        <div class="container">
+        <button class="submit-button" type="submit"> Let's Play!</button>
+        </div>
+        
+        <div class="game-area">
+            <div class="game-selector">
+                <button data-type="history" class="btn btn--big btn--grey">
+                    <i class="fas fa-history"></i>
+                </button>
+                <button data-type="football" class="btn btn--big btn--blue">
+                    <i class="fas fa-futbol"></i>
+                </button>
+                <button data-type="geography" class="btn btn--big btn--green">
+                    <i class="fal fa-globe-europe"></i>
+                </button>
+            </div>
+
+        </div>
+
+
+    </form>
+    <div class="score-area">
+        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
